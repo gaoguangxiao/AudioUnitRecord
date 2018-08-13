@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxb-80-V01">
+                                <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.21270073780000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="录音播放">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RecordOpration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6K5-JU-ygF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pra-0J-EJ8">
+                                <rect key="frame" x="0.0" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.21270073780000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UEb-Lb-LaX"/>
+                                </constraints>
+                                <state key="normal" title="录音开始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RecordOpration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qc6-Jy-YvX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nxb-80-V01" firstAttribute="width" secondItem="pra-0J-EJ8" secondAttribute="width" id="1WM-eF-GDe"/>
+                            <constraint firstItem="nxb-80-V01" firstAttribute="bottom" secondItem="pra-0J-EJ8" secondAttribute="bottom" id="Ec0-yw-KF1"/>
+                            <constraint firstItem="nxb-80-V01" firstAttribute="leading" secondItem="pra-0J-EJ8" secondAttribute="trailing" id="HOJ-NE-INm"/>
+                            <constraint firstAttribute="bottom" secondItem="pra-0J-EJ8" secondAttribute="bottom" id="OR9-gJ-TVo"/>
+                            <constraint firstItem="pra-0J-EJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TbU-fe-eHk"/>
+                            <constraint firstItem="nxb-80-V01" firstAttribute="top" secondItem="pra-0J-EJ8" secondAttribute="top" id="U23-sc-PH2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nxb-80-V01" secondAttribute="trailing" id="VIt-l1-d7K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
